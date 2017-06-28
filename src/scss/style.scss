@@ -1,3 +1,6 @@
+$centro: center;
+$inline: inline;
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -48,4 +51,18 @@
   .col-#{$i}{
     width: anchoDeColumnas($i);
   }
+}
+
+@for $i from 1 through 12{
+  .col-#{$i}-offset{
+    margin-left: anchoDeColumnas($i);
+  }
+}
+
+header{
+  text-align: center;
+}
+
+li{
+  display: $inline;
 }
