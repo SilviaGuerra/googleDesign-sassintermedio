@@ -131,3 +131,14 @@ h3{
   color: $grisFecha;
   font-size: 16px;
 }
+
+//seccion de 5 imagenes
+span{
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.asana{
+  @extend span;
+  display: block;
+}

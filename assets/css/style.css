@@ -144,4 +144,11 @@ h3 {
   color: #5f6368;
   font-size: 16px; }
 
+span, .asana {
+  font-size: 12px;
+  margin-top: 3px; }
+
+.asana {
+  display: block; }
+
 /*# sourceMappingURL=style.css.map */
