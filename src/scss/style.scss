@@ -1,10 +1,21 @@
 $centro: center;
 $inline: inline;
+$imagen-completa: 500px;
+$completo: 100%;
+$grisTitulos : #424242;
+$grisFecha: #5f6368;
+$grisTexto : #414549;
+$azul : #4285f4;
+$texto-cuerpo: 'Roboto', sans-serif;
+$font-titulo: 'Montserrat', sans-serif;
+$justificado: justify;
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: $texto-cuerpo;
+  padding: 10px;
 }
 
 .container{
@@ -63,6 +74,60 @@ header{
   text-align: center;
 }
 
-li{
+li, h3{
   display: $inline;
+}
+
+// estilos seccion method
+.imagen-completa{
+  width: $completo;
+}
+
+//titulo seccion
+h1{
+  font-family: $font-titulo;
+  font-size: 36px;
+  color: $grisTitulos;
+}
+
+//subtitulo seccion
+h4{
+  @extend h1;
+  font-size: 20px;
+}
+
+//cuerpo seccion
+p{
+  font-family: $texto-cuerpo;
+  font-size: 16px;
+  color: $grisTexto;
+  text-align: $justificado;
+  line-height: 30px;
+}
+
+hr {
+  background: $azul;
+  border: none;
+  height: 0;
+}
+
+//estilos seccion newsfeed
+h3{
+  @extend h1;
+  font-size: 20px;
+}
+
+.titulo-derecho{
+  @extend p;
+  float: right;
+  color: $azul;
+}
+
+.imagen-columna{
+  width: $completo;
+}
+
+.fecha{
+  color: $grisFecha;
+  font-size: 16px;
 }
