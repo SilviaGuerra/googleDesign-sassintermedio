@@ -124,31 +124,27 @@ li, h3 {
   margin-top: 100px; }
   .method .imagen-completa {
     width: 100%; }
-
-h1, h4, .titulo-tarjeta {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  color: #424242;
-  padding-top: 20px;
-  margin: 0; }
-
-h4 {
-  font-size: 20px; }
-
-.texto-seccion, .titulo-derecho {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #414549;
-  text-align: justify;
-  line-height: 30px;
-  padding-left: 0; }
-
-.link-abajo {
-  padding-left: 0;
-  font-family: "Roboto Mono", monospace;
-  font-size: 14px;
-  color: #414549;
-  margin-bottom: 40px; }
+  .method h1, .method h4, .method .newsfeed .titulo-tarjeta, .newsfeed .method .titulo-tarjeta {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    color: #424242;
+    padding-top: 20px;
+    margin: 0; }
+  .method h4 {
+    font-size: 20px; }
+  .method .texto-seccion, .method .newsfeed .titulo-derecho, .newsfeed .method .titulo-derecho {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #414549;
+    text-align: justify;
+    line-height: 30px;
+    padding-left: 0; }
+  .method .link-abajo {
+    padding-left: 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    color: #414549;
+    margin-bottom: 40px; }
 
 hr {
   border: 1px solid #4285f4;
@@ -157,22 +153,27 @@ hr {
 
 .newsfeed {
   margin: 40px; }
-
-.titulo-tarjeta {
-  font-size: 24px;
-  margin: -9px; }
-
-.titulo-derecho {
-  float: right;
-  color: #4285f4; }
-
-.fecha {
-  color: #5f6368;
-  font-size: 16px;
-  margin-left: -9px; }
+  .newsfeed .titulo-tarjeta {
+    font-size: 24px;
+    margin: -9px;
+    padding-top: 22px; }
+  .newsfeed .titulo-derecho {
+    float: right;
+    color: #4285f4; }
+  .newsfeed .fecha {
+    color: #5f6368;
+    font-size: 16px;
+    margin-left: -9px;
+    padding: 14px 0; }
+  .newsfeed .texto-seccion, .newsfeed .titulo-derecho {
+    text-align: justify;
+    padding-top: 20px;
+    line-height: 30px; }
 
 .imagen-columna {
-  width: 100%; }
+  width: 100%;
+  margin-left: -9px;
+  padding-top: 22px; }
 
 span, .asana {
   font-size: 12px;

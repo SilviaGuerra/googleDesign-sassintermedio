@@ -11,6 +11,7 @@ $font-titulo: 'Montserrat', sans-serif;
 $font-link: 'Roboto Mono', monospace;
 $justificado: justify;
 $margin-left: -9px;
+$interlineado: 30px;
 
 *{
   box-sizing: border-box;
@@ -103,34 +104,32 @@ li, h3{
   .imagen-completa{
     width: $completo;
   }
-}
-
-h1{
-  font-family: $font-titulo;
-  font-size: 36px;
-  color: $grisTitulos;
-  padding-top: 20px;
-  margin: 0;
-}
-
-h4{
-  @extend h1;
-  font-size: 20px;
-}
-.texto-seccion{
-  font-family: $texto-cuerpo;
-  font-size: 16px;
-  color: $grisTexto;
-  text-align: $justificado;
-  line-height: 30px;
-  padding-left: 0;
-}
-.link-abajo{
-  padding-left: 0;
-  font-family: $font-link;
-  font-size: 14px;
-  color: $grisTexto;
-  margin-bottom: 40px;
+  h1{
+    font-family: $font-titulo;
+    font-size: 36px;
+    color: $grisTitulos;
+    padding-top: 20px;
+    margin: 0;
+  }
+  h4{
+    @extend h1;
+    font-size: 20px;
+  }
+  .texto-seccion{
+    font-family: $texto-cuerpo;
+    font-size: 16px;
+    color: $grisTexto;
+    text-align: $justificado;
+    line-height: $interlineado;
+    padding-left: 0;
+  }
+  .link-abajo{
+    padding-left: 0;
+    font-family: $font-link;
+    font-size: 14px;
+    color: $grisTexto;
+    margin-bottom: 40px;
+  }
 }
 
 hr{
@@ -142,28 +141,34 @@ hr{
 // estilos seccion newsfeed
 .newsfeed{
   margin: 40px;
-}
-
-.titulo-tarjeta{
-  @extend h1;
-  font-size: 24px;
-  margin: $margin-left;
-}
-
-.titulo-derecho{
-  @extend .texto-seccion;
-  float: right;
-  color: $azul;
-}
-
-.fecha{
-  color: $grisFecha;
-  font-size: 16px;
-  margin-left: $margin-left;
+  .titulo-tarjeta{
+    @extend h1;
+    font-size: 24px;
+    margin: $margin-left;
+    padding-top: 22px;
+  }
+  .titulo-derecho{
+    @extend .texto-seccion;
+    float: right;
+    color: $azul;
+  }
+  .fecha{
+    color: $grisFecha;
+    font-size: 16px;
+    margin-left: $margin-left;
+    padding: 14px 0;
+  }
+  .texto-seccion{
+    text-align: $justificado;
+    padding-top: 20px;
+    line-height: $interlineado;
+  }
 }
 
 .imagen-columna{
   width: $completo;
+  margin-left: $margin-left;
+  padding-top: 22px;
 }
 
 //seccion de 5 imagenes
