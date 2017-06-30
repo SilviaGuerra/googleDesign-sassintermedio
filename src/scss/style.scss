@@ -8,20 +8,23 @@ $grisTexto : #414549;
 $azul : #4285f4;
 $texto-cuerpo: 'Roboto', sans-serif;
 $font-titulo: 'Montserrat', sans-serif;
+$font-link: 'Roboto Mono', monospace;
 $justificado: justify;
+$margin-left: -9px;
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: $texto-cuerpo;
-  padding: 10px;
+  // padding: 20px;
 }
 
 .container{
   width: 100%;
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
+  clear: both;
 }
 
 .row:before, .row:after{
@@ -72,64 +75,94 @@ $justificado: justify;
 
 header{
   text-align: center;
+  & .logo{
+    width: 30%;
+    margin-left: 34px;
+    padding-top: 30px;
+  }
+  & .buscar{
+    float: right;
+    width: 2%;
+    padding-top: 45px;
+  }
 }
 
 li, h3{
   display: $inline;
+  & a{
+    font-family: $texto-cuerpo;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 27px;
+  }
 }
 
 // estilos seccion method
-.imagen-completa{
-  width: $completo;
+.method{
+  margin-top: 100px;
+  .imagen-completa{
+    width: $completo;
+  }
 }
 
-//titulo seccion
 h1{
   font-family: $font-titulo;
   font-size: 36px;
   color: $grisTitulos;
+  padding-top: 20px;
+  margin: 0;
 }
 
-//subtitulo seccion
 h4{
   @extend h1;
   font-size: 20px;
 }
-
-//cuerpo seccion
-p{
+.texto-seccion{
   font-family: $texto-cuerpo;
   font-size: 16px;
   color: $grisTexto;
   text-align: $justificado;
   line-height: 30px;
+  padding-left: 0;
 }
-
+.link-abajo{
+  padding-left: 0;
+  font-family: $font-link;
+  font-size: 14px;
+  color: $grisTexto;
+  margin-bottom: 40px;
+}
 hr {
-  background: $azul;
-  border: none;
+  border: 1px solid $azul;
   height: 0;
+  clear: both;
 }
 
-//estilos seccion newsfeed
-h3{
+// estilos seccion newsfeed
+.newsfeed{
+  margin: 40px;
+}
+
+.titulo-tarjeta{
   @extend h1;
-  font-size: 20px;
+  font-size: 24px;
+  margin: $margin-left;
 }
 
 .titulo-derecho{
-  @extend p;
+  @extend .texto-seccion;
   float: right;
   color: $azul;
-}
-
-.imagen-columna{
-  width: $completo;
 }
 
 .fecha{
   color: $grisFecha;
   font-size: 16px;
+  margin-left: $margin-left;
+}
+
+.imagen-columna{
+  width: $completo;
 }
 
 //seccion de 5 imagenes
